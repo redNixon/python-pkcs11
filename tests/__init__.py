@@ -18,6 +18,7 @@ except KeyError:
 try:
     TOKEN = os.environ['PKCS11_TOKEN_LABEL']
     TOKEN_PIN = os.environ.get('PKCS11_TOKEN_PIN')  # Can be None
+    TOKEN_PIN_SO = os.environ.get('PKCS11_SO_TOKEN_PIN')  # Can be None
 except KeyError:
     raise RuntimeError("Must define `PKCS11_TOKEN_LABEL` to run tests.")
 
