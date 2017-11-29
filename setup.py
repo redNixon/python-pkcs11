@@ -58,6 +58,8 @@ if __name__ == '__main__':
             install_requires=requirements.readlines(),
             setup_requires=[
                 'cython',
+                'oscrypto',
+                'cryptography',
                 'setuptools >= 18.0',
                 'setuptools_scm',
             ],

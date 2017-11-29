@@ -1,7 +1,10 @@
 *.so
 *.c
 __pycache__
-
+.cache/
+.eggs/
+.tox/
+env/
 /build
 /dist/
 /docs/_build
